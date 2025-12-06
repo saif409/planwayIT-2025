@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Planway IT | Home
+{% endblock %}
+{% block stylesheet %}
+{% endblock %}
+{% block header %}
+{% endblock %}
+{% block content %}
+    <section id="team" class="team">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Team</h2>
+                <p>Our Hardworking Team</p>
+            </div>
+
+            <div class="row">
+                {% for team in team %}
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="member" data-aos="fade-up">
+                            <div class="member-img">
+                                {% if team.profile_picture %}
+                                    <img src="{{ team.profile_picture.url }}" class="img-fluid" alt=""/>
+                                {% else %}
+                                    <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""/>
+                                {% endif %}
+                                <div class="social">
+
+                                    <a href="{{ team.facebook_link }}"><i class="bi bi-facebook"></i></a>
+                                    <a href="{{ team.instagram_link }}"><i class="bi bi-instagram"></i></a>
+                                    <a href="{{ team.linkdin_link }}"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                {% if team.name %}
+                                    <h4>{{ team.name }}</h4>
+                                {% else %}
+                                    <h4>Khandakar Abu Saife</h4>
+                                {% endif %}
+
+                                {% if team.designation %}
+                                    <span>{{ team.designation }}</span>
+                                {% else %}
+                                    <span>Managing Director & CEO</span>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% block script %}
+{% endblock %}

@@ -1,0 +1,586 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Planway IT | Home
+{% endblock %}
+{% block stylesheet %}
+{% endblock %}
+{% block header %}
+{% endblock %}
+{% block content %}
+<section id="about" class="about">
+    <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+            <h2>About</h2>
+            <p>Who we are</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+            <div class="col-lg-6">
+                <p style="text-align:justify;">
+                    Planway IT is a next-generation global technology company that helps enterprises reimagine their
+                    businesses for the digital age. Our technology products and services are built on four decades of
+                    innovation, with a world-renowned management philosophy, a strong culture of invention and
+                    risk-taking, and a relentless focus on customer relationships. HCL also takes pride in its many
+                    diversity, social responsibility, sustainability, and education initiatives. Through its worldwide
+                    network of R&D facilities and co-innovation labs, global delivery capabilities, and over 168,000+
+                    ‘Ideapreneurs’ across 50 countries, HCL delivers holistic services across industry verticals to
+                    leading enterprises, including 250 of the Fortune 500 and 650 of the Global 2000.
+                </p>
+                <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <div class="container-fluid">
+                    <img class="img-fluid" src="{% static 'assets/img/planwaypic/background_01.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="features" class="features">
+    <div class="container">
+        <ul class="nav nav-tabs row d-flex">
+            <li class="nav-item col-3" data-aos="zoom-in">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                    <i class="ri-gps-line"></i>
+                    <h4 class="d-none d-lg-block">E-Commerce</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                    <i class="ri-body-scan-line"></i>
+                    <h4 class="d-none d-lg-block">Human Resource Management</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                    <i class="ri-sun-line"></i>
+                    <h4 class="d-none d-lg-block">POS</h4>
+                </a>
+            </li>
+            <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+                    <i class="ri-store-line"></i>
+                    <h4 class="d-none d-lg-block">Customized Web Application</h4>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" data-aos="fade-up">
+            <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Web & e-Commerce </h3>
+                        <p class="fst-italic">
+                            Our custom tailored web applications and e-Commerce fits with client business needs and
+                            increase operational efficiency.Stress-free, hassle-free, easy; the perfect solution to
+                            human cost management.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i>Inventory Development,Accounts</li>
+                            <li><i class="ri-check-double-line"></i>Vendor management</li>
+                            <li><i class="ri-check-double-line"></i>Customer management</li>
+                            <li><i class="ri-check-double-line"></i>Affiliate management</li>
+                            <li><i class="ri-check-double-line"></i>Shipping management</li>
+                            <li><i class="ri-check-double-line"></i>Customize Payment gateway implementation</li>
+                            <li><i class="ri-check-double-line"></i>Tax management</li>
+                            <li><i class="ri-check-double-line"></i>Order management</li>
+                            <li><i class="ri-check-double-line"></i>Money refund management & Others</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets/img/features-1.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-2">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Human Resource Management System of Planway IT</h3>
+                        <p>
+                            LinesPay’s HRM solution can transform your business management. Eliminate stress with one
+                            complete, strong solution. Total HR Management from just one unique system.
+                        </p>
+                        <p class="fst-italic">
+                            Unite all your employee records steadily & smoothly. Gather vast amounts of data in one
+                            central place. Stress-free, hassle-free, easy; the perfect solution to human cost
+                            management.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Employee Management</li>
+                            <li><i class="ri-check-double-line"></i> Leave & Holiday</li>
+                            <li><i class="ri-check-double-line"></i> Loan & Advance</li>
+                            <li><i class="ri-check-double-line"></i> Provident Fund & Gratuity</li>
+                            <li><i class="ri-check-double-line"></i> Attendance & Time</li>
+                            <li><i class="ri-check-double-line"></i> Payroll & Tax</li>
+                            <li><i class="ri-check-double-line"></i> Recruitment & Selection</li>
+                            <li><i class="ri-check-double-line"></i> Training Management</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets/img/features-2.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-3">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>Informative Dashboard, Quick System Search, Advanced Search on Reports</h3>
+                        <p style="text-align: justify;">
+                            PrismPOS dashboard gives a bird's- eye view of the business. Customer count, sale orders,
+                            purchase orders, vendors, account summary are some of the many dashboard information.
+                            <br><br>
+
+                            PrismPOS offers global search providing module to module movement at a short period of
+                            time<br><br>
+
+                            Search criterias are more in-depth and allows to seep into the business operations with one
+                            click. Report wise search, date wise search, branch wise search, product wise search, multi
+                            product search are some of the search criteria
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets/img/features-3.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-4">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <h3>We can provide any kind of customized web apllication with your requirement. we have highly
+                            experience team to serve you.</h3>
+                        <p>
+                            Choose your suitable support package as per your business demand
+                        </p>
+                        <p class="fst-italic">
+                            24/7 Customer support is always the first priority for any size of business. Our support
+                            team is working continuously to sort out all the critical issues and puts enormous effort in
+                            order to satisfy the clients
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <img src="{% static 'assets/img/features-4.png' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+            <h2>Services</h2>
+            <p>What we do offer</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="icon-box" data-aos="zoom-in-left">
+                    <div class="icon"><i class="bi bi-laptop" style="color: #ff689b;"></i></div>
+                    <h4 class="title"><a href="">Software Development</a></h4>
+                    <p class="description" style="text-align: justify;">We provide a full range of web application
+                        services, from requirement gathering until the application is successfully deployed on the
+                        client end.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+                <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-app" style="color: #e9bf06;"></i></div>
+                    <h4 class="title"><a href="">Web Development</a></h4>
+                    <p class="description" style="text-align: justify;">Well-built software thinks about users and their
+                        needs. Web Sites require one thing, and that is functionality. Without it most websites are
+                        useless.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+                <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+                    <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+                    <h4 class="title"><a href="">Customized ERP</a></h4>
+                    <p class="description" style="text-align: justify;">Planway IT ERP Solution is a suite of applications that
+                        manages core business process such as sales, purchasing, human resources, customer support, CRM
+                        and inventory</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+                <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+                    <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+                    <h4 class="title"><a href="">Mobile Application Development</a></h4>
+                    <p class="description" style="text-align: justify;">We provide unique mobile application development
+                        services to develop solutions that solve real-life problems. </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+                <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+                    <div class="icon"><i class="bi bi-app" style="color: #3fcdc7;"></i></div>
+                    <h4 class="title"><a href="">Customized Application Development</a></h4>
+                    <p class="description" style="text-align: justify;">We provide unique mobile application development
+                        services to develop solutions that solve real-life problems. </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="service" class="services">
+    <div class="container" style="margin-bottom: 50px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="service-section">
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-md-6" data-aos="zoom-in-left">
+                        <h3>Software Development</h3>
+                        <p class="text-muted">
+                            We provide a full range of web application services, from
+                            requirement gathering until the application is successfully
+                            deployed on the client end. Considering the strategic importance
+                            of web design, Planway IT engages extensive effort and creativity
+                            to build you the site that will stand out from the rest and
+                            contribute to the success of your business.
+                        </p>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Core and continuous activity of Designing and Developing
+                                Applications and Software Solutions since its commencement.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Encompasses in providing a wide range of own products,
+                                tools, and platforms.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;In-house competency and training centers to apply new
+                                technologies and innovations.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Follow well-proven and professional working methodologies
+                                for the implementation of a software solution.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Processes are constantly revised to embrace world-class,
+                                state-of-the-art techniques.
+                            </p>
+                        </div>
+
+                        <div class="feature">
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Project-specific metrics are defined and applied to
+                                ensure consistent results of high standard.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in-left">
+                        <img src="{% static 'assets/img/service/1.jpg' %}" class="img-fluid" alt=""/>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="row">
+                        <div class="col-lg-6" data-aos="zoom-in-left">
+                            <img
+                                    src="{% static 'assets/img/service/2.jpg' %}"
+                                    class="img-responsive"
+                                    alt=""
+                                    width="100%"
+                                    height="400px;"
+                            />
+                        </div>
+                        <div class="col-lg-6" data-aos="zoom-in-left">
+                            <h3>Web Development</h3>
+                            <p class="text-muted" style="text-align: justify;">
+                                Well-built software thinks about users and their needs. Web
+                                Sites require one thing, and that is functionality. Without it
+                                most websites are useless. We can develop advanced systems that
+                                can handle mass amounts of data and transactions. It does not
+                                matter how small or big your company is, we have solutions for
+                                any budget.
+                            </p>
+                            <div class="feature">
+                                <p class="text-muted">
+                                    <i class="ri-check-double-line" style="color: darkorange;"></i>&nbsp;
+                                    Our ability to build dynamic, personalized user-centric
+                                    experiences enables your brand to explore innovative
+                                    opportunities to reach audience.
+                                </p>
+                            </div>
+                            <div class="feature">
+                                <p class="text-muted">
+                                    <i class="ri-check-double-line" style="color: darkorange;"></i
+                                    >&nbsp;Our web development includes mobile-responsive website.
+                                </p>
+                            </div>
+                            <div class="feature">
+                                <p class="text-muted">
+                                    <i class="ri-check-double-line" style="color: darkorange;"></i
+                                    >&nbsp;Fully integrated team enables rapid decision making
+                                    about direction and feasibility during planning and design
+                                    phases.
+                                </p>
+                            </div>
+                            <div class="feature">
+                                <p class="text-muted">
+                                    <i class="ri-check-double-line" style="color: darkorange;"></i
+                                    >&nbsp;We do more with less; we can build your company a
+                                    custom web application that meets your business need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col-lg-6" data-aos="zoom-in-left">
+                        <h3>Mobile Application Development</h3>
+                        <p style="text-align: justify;" class="text-muted">
+                            We provide unique mobile application development services to
+                            develop solutions that solve real-life problems. We enable and
+                            engage our clients with the world-class mobile application
+                            development. Services developed in PLanway IT helps our clients
+                            to stay ahead in the business markets.
+                        </p>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;We implement the latest trends &amp; technologies in
+                                mobile apps development and strive to offer rich user experience
+                                through our services.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Our development team is focused on creativeness and
+                                innovation along with the technical capability to provide high
+                                quality, proficient, effective and accessible applications that
+                                meet our client’s potentials.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Customized business apps allow you to send personalized
+                                updates related to your products and services to your existing
+                                customers in real-time.
+                            </p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa fa-check"></i>
+                            <p class="text-muted">
+                                <i class="ri-check-double-line" style="color: darkorange;"></i
+                                >&nbsp;Planway IT Mobile apps are very convenient for customers, as
+                                they are usually designed with usability in mind.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="zoom-in-left">
+                        <img
+                                src="{% static 'assets/img/service/3.jpg' %}" class="img-responsive" alt="" width="100%" height="450px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="portfolio-details">
+    <div class="container">
+        <div class="section-title text-center" data-aos="zoom-out">
+            <p>Our Clients</p>
+            <span class="mt-3">Revolutionize Your Business Needs With Latest Technology.</span>
+        </div>
+        <div class="row gy-4 mt-5" data-aos="zoom-out">
+
+            <div class="col-lg-3">
+                <img src="{% static 'assets/img/client/fembula.jpg' %}" alt="" style="width: 150px;">
+            </div>
+            <div class="col-lg-3">
+                 <img src="{% static 'assets/img/client/tripx.jpg' %}" alt="" style="width: 150px;">
+            </div>
+            <div class="col-lg-3">
+               <img src="{% static 'assets/img/client/tazree_logo.png' %}" alt="" style="width: 150px;">
+            </div>
+            <div class="col-lg-3">
+                <img src="{% static 'assets/img/client/learner_schhol.png' %}" alt="" style="width: 200px;">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--<section id="portfolio" class="portfolio">-->
+<!--    <div class="container">-->
+
+<!--        <div class="section-title" data-aos="zoom-out">-->
+<!--            <h2>Portfolio</h2>-->
+<!--            <p>What we've done</p>-->
+<!--        </div>-->
+
+<!--        <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">-->
+<!--            <li data-filter="*" class="filter-active">All</li>-->
+<!--            <li data-filter=".filter-app">App</li>-->
+<!--            <li data-filter=".filter-card">Card</li>-->
+<!--            <li data-filter=".filter-web">Web</li>-->
+<!--        </ul>-->
+
+<!--        <div class="row portfolio-container" data-aos="fade-up">-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--                <div class="portfolio-img"><img src="{% static '' %}assets/img/portfolio/portfolio-1.jpg"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>App 1</h4>-->
+<!--                    <p>App</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery' %}"-->
+<!--                       class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Web 3</h4>-->
+<!--                    <p>Web</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery"-->
+<!--                       class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>App 2</h4>-->
+<!--                    <p>App</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery"-->
+<!--                       class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Card 2</h4>-->
+<!--                    <p>Card</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery"-->
+<!--                       class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Web 2</h4>-->
+<!--                    <p>Web</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery' %}"-->
+<!--                       class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>App 3</h4>-->
+<!--                    <p>App</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery' %}"-->
+<!--                       class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Card 1</h4>-->
+<!--                    <p>Card</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery"-->
+<!--                       class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}"-->
+<!--                                                class="img-fluid" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Card 3</h4>-->
+<!--                    <p>Card</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery' %}"-->
+<!--                       class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--                <div class="portfolio-img"><img src="{% static 'assets/img/portfolio/portfolio-9.jpg"-->
+<!--                                                class="img-fluid' %}" alt="">-->
+<!--                </div>-->
+<!--                <div class="portfolio-info">-->
+<!--                    <h4>Web 3</h4>-->
+<!--                    <p>Web</p>-->
+<!--                    <a href="{% static 'assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery' %}"-->
+<!--                       class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>-->
+<!--                    <a href="portfolio-details.html" class="details-link" title="More Details"><i-->
+<!--                            class="bx bx-link"></i></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+
+<!--    </div>-->
+<!--</section>-->
+
+
+{% endblock %}
+{% block script %}
+{% endblock %}
