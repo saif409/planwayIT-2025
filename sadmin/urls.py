@@ -22,9 +22,12 @@ urlpatterns = [
     path('', views.AdminHome.as_view(), name='home'),
     path('service/', views.Service.as_view(), name='service'),
     path('about/', views.about.as_view(), name='about'),
+    path('pricing/', views.pricing.as_view(), name='pricing'),
+    path('contact/', views.contact, name='contact'),
+
     path('portfolio/', views.portfolio.as_view(), name='portfolio'),
     path('team/', views.team.as_view(), name='team'),
-    path('contact/', views.contact, name='contact'),
+
     path('team-augmentation/', views.TeamAugmentation, name='team_augmentation'),
     path('fixed-price-projects/', views.FixedPriceProjects, name='fixed_price_projects'),
     path('project-consulting/', views.ProjectConsulting, name='project_consulting'),

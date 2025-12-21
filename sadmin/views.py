@@ -41,7 +41,7 @@ class Service(View):
         context = {
             "isact_service": "active"
         }
-        return render(request, "service.html", context)
+        return render(request, "service-details.html", context)
 
 
 class about(View):
@@ -52,6 +52,15 @@ class about(View):
         }
         return render(request, "about.html", context)
 
+class pricing(View):
+
+    def get(self, request):
+        context = {
+            "isact_about": "active"
+        }
+        return render(request, "pricing.html", context)
+
+
 
 class team(View):
 
@@ -61,7 +70,7 @@ class team(View):
             "team":get_team_info,
             "isact_team": "active"
         }
-        return render(request, "team.html", context)
+        return render(request, "all/team.html", context)
 
 
 class portfolio(View):
@@ -70,7 +79,7 @@ class portfolio(View):
         context = {
             "isact_portfolio": "active"
         }
-        return render(request, "portfolio.html", context)
+        return render(request, "all/portfolio.html", context)
 
 
 def contact(request):
@@ -80,15 +89,15 @@ def contact(request):
         "obj":obj,
         "isact_contact": "active"
     }
-    if request.method == "POST":
-        name = request.POST.get('name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        message = request.POST.get('message')
-        message_obj = Contact(name=name, email=email,subject=subject,message=message)
-        message_obj.save()
-        messages.success(request, 'Profile details updated.')
-        return redirect("contact")
+    # if request.method == "POST":
+    #     name = request.POST.get('name')
+    #     email = request.POST.get('email')
+    #     subject = request.POST.get('subject')
+    #     message = request.POST.get('message')
+    #     message_obj = Contact(name=name, email=email,subject=subject,message=message)
+    #     message_obj.save()
+    #     messages.success(request, 'Profile details updated.')
+    #     return redirect("contact")
     return render(request, "contact.html", context)
 
 
