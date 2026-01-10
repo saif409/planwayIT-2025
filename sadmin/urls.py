@@ -24,9 +24,11 @@ urlpatterns = [
     path('about/', views.about.as_view(), name='about'),
     path('pricing/', views.pricing.as_view(), name='pricing'),
     path('contact/', views.contact, name='contact'),
+    path('result/', views.Result.as_view(), name='result'),
 
     path('portfolio/', views.portfolio.as_view(), name='portfolio'),
     path('team/', views.team.as_view(), name='team'),
+    path('blog/', views.Blog.as_view(), name='blog'),
 
     path('team-augmentation/', views.TeamAugmentation, name='team_augmentation'),
     path('fixed-price-projects/', views.FixedPriceProjects, name='fixed_price_projects'),

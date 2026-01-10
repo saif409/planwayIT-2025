@@ -70,7 +70,19 @@ class team(View):
             "team":get_team_info,
             "isact_team": "active"
         }
-        return render(request, "all/team.html", context)
+        return render(request, "team.html", context)
+
+
+class Blog(View):
+
+    def get(self, request):
+        get_team_info = TeamMambarProfile.objects.all()
+        context = {
+            "team": get_team_info,
+            "isact_team": "active"
+        }
+        return render(request, "blog-left-sidebar.html", context)
+
 
 
 class portfolio(View):
@@ -79,7 +91,17 @@ class portfolio(View):
         context = {
             "isact_portfolio": "active"
         }
-        return render(request, "all/portfolio.html", context)
+        return render(request, "portfolio-single.html", context)
+
+
+
+class Result(View):
+
+    def get(self, request):
+        context = {
+            "isact_portfolio": "active"
+        }
+        return render(request, "result.html", context)
 
 
 def contact(request):
