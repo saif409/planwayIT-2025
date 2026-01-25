@@ -109,17 +109,16 @@ def contact(request):
 
     context={
         "obj":obj,
-        "isact_contact": "active"
     }
-    # if request.method == "POST":
-    #     name = request.POST.get('name')
-    #     email = request.POST.get('email')
-    #     subject = request.POST.get('subject')
-    #     message = request.POST.get('message')
-    #     message_obj = Contact(name=name, email=email,subject=subject,message=message)
-    #     message_obj.save()
-    #     messages.success(request, 'Profile details updated.')
-    #     return redirect("contact")
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        message_obj = Contact(name=name, email=email,subject=subject,message=message)
+        message_obj.save()
+        messages.success(request, 'Profile details updated.')
+        return redirect("contact")
     return render(request, "contact.html", context)
 
 

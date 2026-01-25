@@ -1,6 +1,3 @@
-
-
-
 {% extends 'templating/base.html' %}
 {% load static %}
 {% block title %}
@@ -14,758 +11,595 @@ Planway IT | Pricing
 {% block content %}
 
 
-
 <div class="container" style="margin-top:120px;">
-    <div class="card-body mb-2" style="border-radius: 30px;background-color:#655E7A;">
-<!--    <div class="card-body mb-2" style="border-radius: 30px;background-color:#fff;">-->
-        <div class="mb-5">
-            <div class="container section-title mt-5" data-aos="fade-up">
-            <h2 style="color:#fff;padding-top:30px;">Pricing</h2>
-            <p style="color:#fff;">Choose a service - get online today</p>
+        <div class="card-body mb-2" style="border-radius: 30px;background-color:#091438;">
+            <!--    <div class="card-body mb-2" style="border-radius: 30px;background-color:#fff;">-->
+            <div class="mb-5">
+                <div class="container section-title mt-5" data-aos="fade-up">
+                    <h2 style="color:#fff;padding-top:30px;">Pricing</h2>
+                    <p style="color:#fff;">Choose a service - get online today</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="col-lg-12" style="margin-bottom:20px;">
+        <div class="row">
+            <div class="col-lg-01"></div>
+            <div class="col-lg-11">
+                <ul class="nav nav-tabs center" id="myTab" role="tablist">
+                    <button class="nav-link m-1" id="cold-tab" data-bs-toggle="tab" data-bs-target="#cold-tab-pane"
+                            type="button" role="tab" aria-controls="cold-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">Cold email outreach
+                    </button>
+                    <button class="nav-link m-1" id="email-tab" data-bs-toggle="tab" data-bs-target="#email-tab-pane"
+                            type="button" role="tab" aria-controls="email-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">Email Marketing
+                    </button>
+                    <button class="nav-link m-1" id="web-tab" data-bs-toggle="tab" data-bs-target="#web-tab-pane"
+                            type="button" role="tab" aria-controls="web-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">Web Development
+                    </button>
+                    <button class="nav-link m-1" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile-tab-pane"
+                            type="button" role="tab" aria-controls="mobile-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">Mobile Apps Development
+                    </button>
+                    <button class="nav-link m-1" id="it-tab" data-bs-toggle="tab" data-bs-target="#it-tab-pane"
+                            type="button" role="tab" aria-controls="it-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">IT Consultations
+                    </button>
+                    <button class="nav-link m-1" id="customize-tab" data-bs-toggle="tab"
+                            data-bs-target="#customize-tab-pane" type="button" role="tab"
+                            aria-controls="customize-tab-pane" aria-selected="false"
+                            style="color:#fff;background-color:#0a62c9;">Customize Business Solution
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="cold-tab-pane" role="tabpanel" aria-labelledby="cold-tab"
+             tabindex="0">
+            <section id="cold" class="pricing section light-background">
+                <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div id="cold" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-card">
+                                <h3>Basic Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">30</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.3 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>12 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>4 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">Buy Now<i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <h3>Standard Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">70</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>30 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>10 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-light">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="pricing-card">
+                                <h3>Premium Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">140</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>60 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>20 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="email-tab-pane" role="tabpanel" aria-labelledby="email-tab" tabindex="0">
+            <section id="email" class="pricing section light-background">
+                <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div id="email" role="tabpanel" aria-labelledby="emial-tab" class="row g-4 justify-content-center">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-card">
+                                <h3>Basic Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">30</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.3 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>12 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>4 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">Buy Now<i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <h3>Standard Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">70</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>30 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>10 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-light">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="pricing-card">
+                                <h3>Premium Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">140</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>60 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>20 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="web-tab-pane" role="tabpanel" aria-labelledby="web-tab" tabindex="0">
+            <section id="pricing" class="pricing section light-background">
+                <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div id="web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-card">
+                                <h3>Basic Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">9.9</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium doloremque laudantium totam.</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Duis aute irure dolor
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Excepteur sint occaecat
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Nemo enim ipsam voluptatem
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <h3>Standard Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">19.9</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                    blanditiis
+                                    praesentium voluptatum.</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Consectetur adipiscing elit
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Sed do eiusmod tempor
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Ut labore et dolore magna
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-light">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="pricing-card">
+                                <h3>Premium Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">39.9</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                    esse quam
+                                    nihil molestiae.</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Temporibus autem quibusdam
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Saepe eveniet ut et voluptates
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Nam libero tempore soluta
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Cumque nihil impedit quo
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        Maxime placeat facere possimus
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="mobile-tab-pane" role="tabpanel" aria-labelledby="mobile-tab" tabindex="0">
+            <section id="mobile" class="pricing section light-background">
+                <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div id="mobile" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-card">
+                                <h3>Basic Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">300</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.3 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>12 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>4 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-primary">Buy Now<i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pricing-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <h3>Standard Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">70</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>30 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>10 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+
+                                <a href="#" class="btn btn-light">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="pricing-card">
+                                <h3>Premium Plan</h3>
+                                <div class="price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">140</span>
+                                    <span class="period">/ month</span>
+                                </div>
+                                <p class="description">equals $2.2 per mailbox including domains</p>
+
+                                <h4>Featured Included:</h4>
+                                <ul class="features-list">
+                                    <li><i class="bi bi-check-circle-fill"></i>Complete Done For You Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>60 Email Address</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>20 .com Domains for Free</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Domain Redirect Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>1 Master Inbox</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Free Email warm-up</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Email Outreach Tools Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Tracking Setup</li>
+                                    <li><i class="bi bi-check-circle-fill"></i>Mailbox Reputation Checks</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">
+                                    Buy Now
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="it-tab-pane" role="tabpanel" aria-labelledby="it-tab" tabindex="0">
+            <section id="it" class="pricing section light-background">
+                <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div id="it-name" role="tabpanel" aria-labelledby="it-tab" class="row g-4 justify-content-center">
+                        <section id="it consultant" class="services">
+                            <div class="container section-title" data-aos="fade-up">
+                                <h2>We are here to solve business problem!</h2>
+                                <p>Let’s Collaborate</p>
+                            </div><!-- End Section Title -->
+                            <div class="container" style="margin-bottom: 10px;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="service-section">
+                                            <div class="row" style="margin-bottom: 40px;">
+                                                <div class="col-md-12" data-aos="zoom-in-left">
+                                                    <h3 class="text-center">We Have a Expeience Team To Solve Your Business Problem</h3>
+                                                    <p class="text-muted mt-2 text-center" style="text-align: justify;">
+                                                        Planway IT provides end-to-end software solutions designed to
+                                                        streamline operations, enhance productivity, and drive
+                                                        innovation. From development to deployment, our services are
+                                                        built to scale with your business and deliver exceptional
+                                                        results. <br>
+                                                        <a href="{% url 'contact' %}" class="btn btn-outline-primary mt-3">Contact With Us</a>
+
+                                                    </p>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="customize-tab-pane" role="tabpanel" aria-labelledby="customize-tab" tabindex="0">
+            <section id="customize" class="pricing section light-background">
+                <div class="container mt-1" data-aos="fade-up" data-aos-delay="100">
+                    <div id="customized" role="tabpanel" aria-labelledby="web-tab" class="row  justify-content-center">
+                        <section id="service" class="services">
+                            <div class="container section-title" data-aos="fade-up">
+                                <h2>Custom Software Solutions</h2>
+                                <p>Let’s Collaborate</p>
+                            </div><!-- End Section Title -->
+                            <div class="container" style="margin-bottom: 10px;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="service-section">
+                                            <div class="row" style="margin-bottom: 40px;">
+                                                <div class="col-md-6" data-aos="zoom-in-left">
+                                                    <h3>Customized Application Development</h3>
+                                                    <p class="text-muted mt-2" style="text-align: justify;">
+                                                        We provide a full range of web application services, from
+                                                        requirement gathering until the application is successfully
+                                                        deployed on the client end. Considering the strategic importance
+                                                        of web design, Planway IT engages extensive effort and
+                                                        creativity
+                                                        to build you the site that will stand out from the rest and
+                                                        contribute to the success of your business.
+                                                    </p>
+
+
+                                                    <div class="feature mt-3">
+                                                        <i class="fa fa-check"></i>
+                                                        <p class="text-muted">
+                                                            <i class="bi bi-check-circle-fill"
+                                                               style="color:#386BE8;"></i>
+                                                            &nbsp;Core and continuous activity of Designing and
+                                                            Developing
+                                                            Applications and Software Solutions since its commencement.
+                                                        </p>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <p class="text-muted"><i class="bi bi-check-circle-fill"
+                                                                                 style="color:#386BE8;"></i>&nbsp;Encompasses
+                                                            in
+                                                            providing a wide range of own products, tools, and
+                                                            platforms.</p>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <p class="text-muted">
+                                                            <i class="bi bi-check-circle-fill"
+                                                               style="color:#386BE8;"></i>&nbsp;In-house
+                                                            competency and training centers to apply new
+                                                            technologies and innovations.
+                                                        </p>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <p class="text-muted">
+                                                            <i class="bi bi-check-circle-fill"
+                                                               style="color:#386BE8;"></i>&nbsp;Follow
+                                                            well-proven and professional working methodologies
+                                                            for the implementation of a software solution.
+                                                        </p>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <p class="text-muted">
+                                                            <i class="bi bi-check-circle-fill"
+                                                               style="color:#386BE8;"></i>&nbsp;Processes
+                                                            are constantly revised to embrace world-class,
+                                                            state-of-the-art techniques.
+                                                        </p>
+                                                    </div>
+                                                    <div class="feature">
+                                                        <p class="text-muted">
+                                                            <i class="bi bi-check-circle-fill"
+                                                               style="color:#386BE8;"></i>&nbsp;Project-specific
+                                                            metrics are defined and applied to
+                                                            ensure consistent results of high standard.
+                                                        </p>
+                                                    </div>
+                                                    <a href="{% url 'contact' %}" class="btn btn-outline-primary mt-3">Contact
+                                                        With
+                                                        Us</a>
+                                                </div>
+                                                <div class="col-md-6" data-aos="zoom-in-left">
+                                                    <img src="{% static 'assets/img/image/planwaypic/img1.webp' %}"
+                                                         class="img-fluid" style="height:500px;" alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </div>
-
-<div class="col-lg-12" style="margin-bottom:20px;">
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-11">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <button class="nav-link btn active"  id="web-tab" data-bs-toggle="tab" data-bs-target="#web-tab-pane" type="button" role="tab" aria-controls="web-tab-pane" aria-selected="true" style="color:#fff;background-color:#0a62c9;">Web Development</button>
-                <button class="nav-link mr-1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" style="color:#fff;background-color:#0a62c9;">Mobile Apps Development</button>
-                <button class="nav-link mr-1" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="color:#fff;background-color:#0a62c9;">Email Marketing</button>
-                <button class="nav-link mr-1" id="cold-tab" data-bs-toggle="tab" data-bs-target="#cold-tab-pane" type="button" role="tab" aria-controls="cold-tab-pane" aria-selected="false" style="color:#fff;background-color:#0a62c9;">Cold email outreach</button>
-                <button class="nav-link mr-1" id="it-tab" data-bs-toggle="tab" data-bs-target="#it-tab-pane" type="button" role="tab" aria-controls="it-tab-pane" aria-selected="false" style="color:#fff;background-color:#0a62c9;">IT Consultations</button>
-                <button class="nav-link mr-1" id="customize-tab" data-bs-toggle="tab" data-bs-target="#customize-tab-pane" type="button" role="tab" aria-controls="customize-tab-pane" aria-selected="false" style="color:#fff;background-color:#0a62c9;">Customize Business Solution</button>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="web-tab-pane" role="tabpanel" aria-labelledby="web-tab" tabindex="0">
-      <section id="web" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-      <section id="mobile" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-      <section id="pricing" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-  <div class="tab-pane fade" id="cold-tab-pane" role="tabpanel" aria-labelledby="cold-tab" tabindex="0">
-      <section id="cold" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-  <div class="tab-pane fade" id="it-tab-pane" role="tabpanel" aria-labelledby="it-tab" tabindex="0">
-      <section id="it" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-  <div class="tab-pane fade" id="customize-tab-pane" role="tabpanel" aria-labelledby="customize-tab" tabindex="0">
-      <section id="customize" class="pricing section light-background">
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="100">
-        <div id="Web" role="tabpanel" aria-labelledby="web-tab" class="row g-4 justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">9.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium totam.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Duis aute irure dolor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Excepteur sint occaecat
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nemo enim ipsam voluptatem
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">19.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Lorem ipsum dolor sit amet
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Consectetur adipiscing elit
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Sed do eiusmod tempor
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Ut labore et dolore magna
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-light">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">39.9</span>
-                        <span class="period">/ month</span>
-                    </div>
-                    <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae.</p>
-
-                    <h4>Featured Included:</h4>
-                    <ul class="features-list">
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Temporibus autem quibusdam
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Saepe eveniet ut et voluptates
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Nam libero tempore soluta
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Cumque nihil impedit quo
-                        </li>
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Maxime placeat facere possimus
-                        </li>
-                    </ul>
-
-                    <a href="#" class="btn btn-primary">
-                        Buy Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  </div>
-</div>
-
 
 {% endblock %}
 {% block script %}
