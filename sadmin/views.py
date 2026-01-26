@@ -15,7 +15,9 @@ from django.contrib.auth.hashers import make_password
 from django.template.loader import get_template
 from django.views import View
 from django.core.mail import send_mail
-from sadmin.models import OfficialContactInformation,TeamMambarProfile,Contact,Clients
+from sadmin.models import OfficialContactInformation, TeamMambarProfile, Contact, Clients, PortfolioImage
+
+
 # Create your views here.
 # @method_decorator(login_required)
 #     def dispatch(self, request, *args, **kwargs):
@@ -85,23 +87,36 @@ class Blog(View):
 
 
 
-class portfolio(View):
+class CaseStudy(View):
 
     def get(self, request):
         context = {
             "isact_portfolio": "active"
         }
-        return render(request, "portfolio-single.html", context)
+        return render(request, "case-study.html", context)
 
 
 
 class Result(View):
 
     def get(self, request):
+        get_image = PortfolioImage.objects.all()
         context = {
+            "get_image":get_image,
             "isact_portfolio": "active"
         }
         return render(request, "result.html", context)
+
+
+class EmailWorks(View):
+
+    def get(self, request):
+
+        context = {
+
+            "isact_portfolio": "active"
+        }
+        return render(request, "how_email_works.html", context)
 
 
 def contact(request):

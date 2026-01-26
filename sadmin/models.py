@@ -25,9 +25,7 @@ class TeamMambarProfile(models.Model):
     name = models.CharField(max_length=500)
     profile_picture = models.ImageField()
     designation = models.CharField(max_length=500)
-    facebook_link = models.CharField(max_length=500, blank=True,null=True)
-    instagram_link = models.CharField(max_length=500,blank=True,null=True)
-    linkdin_link = models.CharField(max_length=500,blank=True,null=True)
+
 
     def __str__(self):
         return self.name
@@ -45,3 +43,10 @@ class Clients(models.Model):
         return self.name
 
 
+class PortfolioImage(models.Model):
+    profile_picture = models.ImageField()
+    name = models.CharField(max_length=500)
+
+
+    def __str__(self):
+        return self.name
