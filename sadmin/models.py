@@ -50,3 +50,14 @@ class PortfolioImage(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class CaseStudy(models.Model):
+    image = models.ImageField()
+    title = models.CharField(max_length=500)
+    details=models.TextField()
+    date = models.DateField()
+
+
+    def __str__(self):
+        return self.title

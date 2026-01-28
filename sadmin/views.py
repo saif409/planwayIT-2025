@@ -15,7 +15,7 @@ from django.contrib.auth.hashers import make_password
 from django.template.loader import get_template
 from django.views import View
 from django.core.mail import send_mail
-from sadmin.models import OfficialContactInformation, TeamMambarProfile, Contact, Clients, PortfolioImage
+from sadmin.models import OfficialContactInformation, TeamMambarProfile, Contact, Clients, PortfolioImage,CaseStudy
 
 
 # Create your views here.
@@ -87,10 +87,12 @@ class Blog(View):
 
 
 
-class CaseStudy(View):
+class StudyCase(View):
 
     def get(self, request):
+        case_data= CaseStudy.objects.all()
         context = {
+            "case_data":case_data,
             "isact_portfolio": "active"
         }
         return render(request, "case-study.html", context)

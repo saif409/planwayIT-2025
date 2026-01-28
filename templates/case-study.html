@@ -1,7 +1,7 @@
 {% extends 'templating/base.html' %}
 {% load static %}
 {% block title %}
-Planway IT | Home
+Planway IT | Case Study
 {% endblock %}
 {% block stylesheet %}
 {% endblock %}
@@ -18,50 +18,18 @@ Planway IT | Home
           </div>
         </div>
         <div class="row">
+        {% for d in case_data %}
           <div class="col-md-6 mt-5">
             <div class="content">
-              <img class="img-fluid" src="{% static 'others/images/portfolio/portfolio-big-2.jpg' %}" style="height:280px;width:100%;">
+              <img class="img-fluid" src="{{d.image.url}}" style="height:280px;width:100%;">
               <div class="content mt-4">
-                <h4 style="font-weight: 900;">Dribbble Redesign</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, dignissimos culpa quam
-                  debitis quibusdam magni rem quis, cum nesciunt?</p>
-                <button class="btn btn-primary">View Case Study</button>
+                <h4 style="font-weight: 900;">{{d.title}}</h4>
+                <p>{{d.details|truncatechars:215}}</p>
+                  <button class="btn btn-primary" >View Case Study</button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mt-5">
-            <div class="content">
-              <img class="img-fluid" src="{% static 'others/images/portfolio/portfolio-big-3.jpg' %}" style="height:280px;width:100%;">
-              <div class="content mt-4">
-                <h4 style="font-weight: 900;">Dribbble Redesign</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, dignissimos culpa quam
-                  debitis quibusdam magni rem quis, cum nesciunt?</p>
-                <button class="btn btn-primary">View Case Study</button>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-6 mt-5">
-            <div class="content">
-              <img class="img-fluid" src="{% static 'others/images/portfolio/portfolio-big-2.jpg' %}" style="height:280px;width:100%;">
-              <div class="content mt-4">
-                <h4 style="font-weight: 900;">Dribbble Redesign</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, dignissimos culpa quam
-                  debitis quibusdam magni rem quis, cum nesciunt?</p>
-                <button class="btn btn-primary">View Case Study</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mt-5">
-            <div class="content">
-              <img class="img-fluid" src="{% static 'others/images/portfolio/portfolio-big-3.jpg' %}" style="height:280px;width:100%;">
-              <div class="content mt-4">
-                <h4 style="font-weight: 900;">Dribbble Redesign</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae, dignissimos culpa quam
-                  debitis quibusdam magni rem quis, cum nesciunt?</p>
-                <button class="btn btn-primary">View Case Study</button>
-              </div>
-            </div>
-          </div>
+        {% endfor %}
         </div>
       </div>
     </section>

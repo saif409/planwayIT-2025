@@ -27,7 +27,7 @@ urlpatterns = [
     path('result/', views.Result.as_view(), name='result'),
     path('how-email-works/', views.EmailWorks.as_view(), name='how_email_works'),
 
-    path('case-study/', views.CaseStudy.as_view(), name='case_study'),
+    path('case-study/', views.StudyCase.as_view(), name='case_study'),
     path('team/', views.team.as_view(), name='team'),
     path('blog/', views.Blog.as_view(), name='blog'),
 
