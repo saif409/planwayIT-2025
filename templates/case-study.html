@@ -24,8 +24,8 @@ Planway IT | Case Study
               <img class="img-fluid" src="{{d.image.url}}" style="height:280px;width:100%;">
               <div class="content mt-4">
                 <h4 style="font-weight: 900;">{{d.title}}</h4>
-                <p>{{d.details|truncatechars:215}}</p>
-                  <button class="btn btn-primary" >View Case Study</button>
+                <p style="text-align:justify;">{{d.details}}</p>
+<!--                  <a href="{% url 'case_study_details' %}"><button class="btn btn-primary" >View Case Study</button></a>-->
               </div>
             </div>
           </div>

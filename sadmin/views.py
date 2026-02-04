@@ -98,6 +98,16 @@ class StudyCase(View):
         return render(request, "case-study.html", context)
 
 
+class StudyCaseDetails(View):
+
+    def get(self, request):
+        case_data= CaseStudy.objects.all()
+        context = {
+
+
+        }
+        return render(request, "case_study_details.html", context)
+
 
 class Result(View):
 

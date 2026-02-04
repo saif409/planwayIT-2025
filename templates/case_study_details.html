@@ -1,10 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'templating/base.html' %}
+{% load static %}
+{% block title %}
+Planway IT | Case Details
+{% endblock %}
+{% block stylesheet %}
 
-</body>
-</html>
+{% endblock %}
+{% block header %}
+{% endblock %}
+{% block content %}
+
+<section id="call-to-action-2" class="call-to-action-2 section" style="height:100%;margin-top:100px;background-image: url({% static 'assets/img/service-banner.webp' %})">
+    <div class="container">
+        <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+                <div class="text-center">
+                    <h1 style="font-weight: 900;color:#fff;">Our Services</h1>
+                    <p style="color:#fff;">Scale Your Business with Expert Tech & Growth Solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-about section">
+    <div class="container">
+        <div class="row align-items-center text-center text-lg-left">
+            <div class="col-lg-5">
+                <h1>Where To Case Study </h1>
+                <p class="mt-30" style="text-align:justify;">"Where To" is an innovative and user-friendly event booking app that goes beyond
+                    ordinary event planning. It offers customers a seamless platform to not only book exciting events
+                    but also access a diverse range of exclusive vouchers and deals. With a focus on convenience and
+                    accessibility, organizers can log in to the app to effortlessly create, manage, and publish their
+                    events and vouchers in a timely manner.
+
+                    For event enthusiasts, the app provides a delightful experience by presenting a wide array of
+                    upcoming events to explore and attend. Users can easily access event details, such as dates, times,
+                    locations, and ticket availability, making it effortless to plan their schedules and secure tickets
+                    right from their smartphones.</p>
+            </div>
+            <div class="col-lg-7">
+                <img class="img-fluid" src="{% static 'assets/img/illustration-1.webp' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="text-center">
+                <h2 class="mt-5" style="font-weight: 900;">What Services we provide?</h2>
+                <p class="mt-2">Planway IT Solution Limited You build the vision. We build the rest. "Whether
+                    it’s a custom web
+                    application or a cold email engine that fills your pipeline, we deliver precision-engineered
+                    solutions.
+                    Stop managing multiple vendors and start seeing results. Get a custom quote today.Design. Develop.
+                    Deliver. "High-performance software meets high-impact marketing. We bridge the gap between building
+                    a
+                    great product and getting it into the right hands. Our integrated approach to development and
+                    outreach
+                    ensures your business doesn't just launch—it thrives.</p>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
+
+<section id="services" class="services section light-background">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/software.png' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">Software Development</h3>
+                        <p>Planway IT Solution provide all kinds of enterprise software solutions, ecommerces, delivery
+                            management system, business management, learning applications are our core strength. Based
+                            on your super custom requirements, we can provide amazing full super fast and top notch
+                            solutions.</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/web.webp' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">Web Application Development</h3>
+                        <p>With over a decade of experience in web development, Planway IT well-prepared to offer
+                            end-to-end web application development solutions. Opt for the perfect solution, and let us
+                            take your web application to the next level.</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/mobile.png' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">Mobile Application Development</h3>
+                        <p>Everybody looks for an App when you have a business digital or non digital. We use Flutter
+                            and Native technologies to develop super user friendly, fast and smooth mobile applications.
+                            Our expert engineers can deliver both iOS and Android applications on time.</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/ecommerce.svg' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">E-Commerce Solutions</h3>
+                        <p>Ecommerce Software development is our very core skill. We have developed more than 10 large
+                            scale ecommerce projects with numerous modules. With time our ecommerce engine matured to a
+                            great level. Our ecommerce software solutions includes frontend application, backend
+                            application, android and ios applications. Each application runs separately and communicates
+                            using REST API.</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/email.webp' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">Email Marketing/ Cold Email Outreach</h3>
+                        <p>Free your sales team to focus on closing deals. With FindAnyLead LLC’s expert list-building
+                            team, we provide verified B2B prospect lists so your team can maximize efficiency and drive
+                            growth. Get started today and see the difference a dedicated team can make!</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card d-flex">
+                    <div class="icon flex-shrink-0">
+                        <img src="{% static 'assets/img/service/logistic.png' %}" class="img-fluid" style="height:80%;" alt="">
+                    </div>
+                    <div>
+                        <h3 style="font-weight: 900;">Logistics Solutions</h3>
+                        <p>In the past couple of years Qtec Solution Limited has developed multiple logistics solutions
+                            for local and international companies. We developed custom logistics solutions using Google
+                            Maps, generating routing, and fulfilling.</p>
+                        <a href="" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Service Card -->
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <div class="section-title text-center">
+                    <h2 style="font-weight: 900;">What we do best</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">User research</h3>
+                    <p>The goal of this research is to identify user pain points, behaviors, and conversion
+                        triggers.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">Product marketing</h3>
+                    <p>To validate the product’s value proposition against real user needs. This research will define
+                        the Ideal Customer Profile (ICP).</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">Visual design</h3>
+                    <p>To ensure the visual language (color, typography, imagery, and layout) aligns with user
+                        expectations and brand values.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">Front-end engineering</h3>
+                    <p>To validate the interactivity, responsiveness, and technical accessibility of the front-end
+                        interface.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">Usability testing & analytics</h3>
+                    <p>The goal is to move beyond opinions by using quantitative data (Analytics) to see where users are
+                        dropping off and qualitative research (Usability Testing) to understand why.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="block">
+                    <h3 class="mb-3" style="font-weight: 900;">Design sprints & prototyping</h3>
+                    <p>To compress months of development into a single week of intensive design and testing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="call-2" class="call-to-action-2 section dark-background">
+    <div class="container-fluid">
+        <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+                <div class="text-center">
+                    <h1 style="font-weight: 900;">Call To Action</h1>
+                    <h1>Want to build your one? <br>We are here for you!</h1>
+                    <a class="cta-btn" href="#">Call To Action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% endblock %}
+{% block script %}
+{% endblock %}
+
+

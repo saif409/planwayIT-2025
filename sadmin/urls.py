@@ -28,6 +28,7 @@ urlpatterns = [
     path('how-email-works/', views.EmailWorks.as_view(), name='how_email_works'),
 
     path('case-study/', views.StudyCase.as_view(), name='case_study'),
+    path('case-study-details/', views.StudyCaseDetails.as_view(), name='case_study_details'),
     path('team/', views.team.as_view(), name='team'),
     path('blog/', views.Blog.as_view(), name='blog'),
 
